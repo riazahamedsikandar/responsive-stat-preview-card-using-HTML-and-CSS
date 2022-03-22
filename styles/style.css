@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+html{
+    
+}
+
+
+body{
+    font-family: 'Gentium Basic', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+}

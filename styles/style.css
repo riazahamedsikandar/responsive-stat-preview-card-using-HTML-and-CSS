@@ -1,12 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
-
+:root{
+--clr-Very-dark-blue: hsl(233, 47%, 7%);
+--clr-Dark-desaturated-blue: hsl(244, 38%, 16%);
+--clr-Soft-violet: hsl(277, 64%, 61%);
+--clr-White: hsl(0, 0%, 100%);
+--clr-Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+--clr-Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
 html{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body{
     font-family: 'Gentium Basic', serif;
-font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--clr-Very-dark-blue); 
+    color: var(--clr-White);
+    
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
 }
+
+main {
+    max-width: 1440px;
+    border-radius: 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    max-width: 100%;
+    background-color: var(--clr-Soft-violet);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 1rem;
+
+}
+.image-container img{
+    max-width: 100%;
+    mix-blend-mode: overlay;
+}
+
+.content-container{
+    max-width: 100%;
+    padding: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--clr-White);
+    font-weight: 650;
+    padding: 3%;
+
+}
+.content-container p{
+    font-family: 'Inter', sans-serif;
+    color: var(--clr-Slightly-transparent-white);
+    font-size: 2em;
+    padding: 3%;
+    line-height: 1.75em;
+}
+
+h1 span{
+    color: var(--clr-Soft-violet);
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.stats .stats1{
+    font-family: 'Inter', sans-serif;
+    color: var(--clr-White);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.stats .stats2{
+    text-transform: uppercase;
+    color: var(--clr-Slightly-transparent-white);
+}
+
